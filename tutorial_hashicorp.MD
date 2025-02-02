@@ -9,7 +9,7 @@ Como deployar infraestrutura com terraform?
 Escopo -> Autor -> Init -> Plan -> Apply
 
 ### Build Infra
-
+```
 export AWS_ACCESS_KEY_ID=
 export AWS_SECRET_ACCESS_KEY=
 mkdir learn-terraform-aws-instance
@@ -44,3 +44,4 @@ terraform validate
 terraform apply
 terraform show
 terraform state list
+```
