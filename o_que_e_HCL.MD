@@ -19,4 +19,4 @@ resource "aws_instance" "app_server" {
 }
 ```
 Neste exemplo, o type é *resource*, o tipo do resource é *aws_instance* e o nome é *app_server*.  
-Para encontrar os tipos de resource disponíveis para cada provider, só consultar <registry.terraform.io>  
+Para encontrar os tipos de resource disponíveis para cada provider, só consultar <https://registry.terraform.io>  
