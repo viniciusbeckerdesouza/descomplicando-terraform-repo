@@ -12,6 +12,9 @@ Assim, o terraform verifica o que está no HCL; compara com o que está no state
 - Infraestrutura escalável com monitoramento
 - Cluster self service
 
+### Tipos de infraestrutura
 
+- Imutável: 
+- Mutável: quando você modifica a aplicação que roda em uma determinada máquina. Por exemplo, na máquina xpto0123 estava rodando spark; ela foi descomissionada e agora está rodando kafka. **Problema**: como o servidor está é uma incógnita, pode ter o mesmo serviço rodando em diferentes hosts, mas cada máquina configurada de um jeito.
 
 
