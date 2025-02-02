@@ -1,0 +1,26 @@
+# Arquivos de estado do Terraform
+terraform.tfstate
+terraform.tfstate.backup
+*.tfstate
+*.tfstate.backup
+
+# Diretório de cache do Terraform
+.terraform/
+.terraform.lock.hcl
+learn-terraform-aws-instance/.terraform/
+# Variáveis sensíveis (evite versionar credenciais)
+*.tfvars
+*.tfvars.json
+
+# Planos de execução
+*.tfplan
+
+# Logs de depuração
+crash.log
+*.log
+
+# Arquivos gerados pelo Terraform Providers
+.terraform/providers/
+
+# Arquivos de saída temporários
+*.tfout
