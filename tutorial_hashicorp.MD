@@ -15,6 +15,9 @@ export AWS_SECRET_ACCESS_KEY=
 mkdir learn-terraform-aws-instance
 cd learn-terraform-aws-instance
 touch main.tf
+```
+Conteúdo do main.tf:
+```
 terraform {
   required_providers {
     aws = {
@@ -38,6 +41,8 @@ resource "aws_instance" "app_server" {
     Name = "ExampleAppServerInstance"
   }
 }
+```
+```
 terraform init
 terraform fmt
 terraform validate
