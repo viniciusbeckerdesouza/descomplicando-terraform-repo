@@ -2,10 +2,10 @@
 
 Disponível em: https://developer.hashicorp.com/terraform/tutorials/aws-get-started <https://developer.hashicorp.com/terraform/tutorials/aws-get-started>
 
-O que é Infraestrtura como código (IaC)?
+O que é Infraestrtura como código (IaC)?  
 Forma de gerenciar infraestrutura usando arquivos de configuração. Palavras-chave: seguro, consistente, repetível, reutilizável, versionável, compartilhável.
 
-Como deployar infraestrutura com terraform?
+Como deployar infraestrutura com terraform?  
 Escopo -> Autor -> Init -> Plan -> Apply
 
 ### Build Infra
