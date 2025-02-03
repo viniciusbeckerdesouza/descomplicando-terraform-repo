@@ -3,6 +3,7 @@
 ### init
 Cria a pasta .terraform. Nesta pasta vai ter tudo que o binário precisa pra rodar.
 Nela vai baixar os plugins, vai colocar os módulos etc.  
+Usar *-upgrade* sempre pra atualizar os plugins.  
 
 ### plan
 Este comando olha o HCL para ver o que você quer, olha o state file e verifica se o que foi pedido bate com o state e com o que está na cloud.  
