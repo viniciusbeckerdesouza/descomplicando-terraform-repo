@@ -13,6 +13,10 @@ Usar opção *-out* para salvar o plano em um arquivo.
 
 ### apply
 Este comando aplica o plano, se existir, ou apenas cria a infraestrtura diretamente.  
+Para usar o apply com um plano já criado, você passa o nome do arquivo.  
+```
+terraform apply <nome-do-plano>
+```
 
 ### destroy
 Sempre rode ao fim do dia durante o treinamento.  
