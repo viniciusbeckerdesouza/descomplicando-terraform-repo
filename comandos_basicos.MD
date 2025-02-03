@@ -21,4 +21,11 @@ terraform apply <nome-do-plano>
 ### destroy
 Sempre rode ao fim do dia durante o treinamento.  
 Este comando deleta a infraestrtura que está no state file.  
+Pode-se fazer um plano pro destroy:
+```
+terraform plan -destroy <nome-do-plano>
+terraform apply <nome-do-plano>
+```
+Neste caso, se usa o apply para executar o plano de destroy.  
+
 
