@@ -23,25 +23,20 @@ provider "aws" {
   region = "us-east-2"
 }
 
-provider "aws" {
-  alias  = "sp"
-  region = "sa-east-1"
-}
-
 resource "aws_instance" "east" {
   ami           = "ami-08d70e59c07c61a3a"
   instance_type = "t3.micro"
-  provider      = aws.east  # Correção aqui
+  provider      = aws.east # Correção aqui
 
   tags = {
     Name = "East"
   }
 }
 
-resource "aws_instance" "sp" {
+resource "aws_instance" "west" {
   ami           = "ami-08d70e59c07c61a3a"
   instance_type = "t3.micro"
-  provider      = aws.sp  # Correção aqui
+  provider      = aws.west # Correção aqui
 
   tags = {
     Name = "SP"
