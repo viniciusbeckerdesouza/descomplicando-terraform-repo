@@ -1,17 +1,15 @@
-data "aws_ami" "ubuntu" {
-  most_recent = true
-
-  filter {
-    name   = "name"
-    values = ["ubuntu/images/hvm-ssd/ubuntu-jammy-22.04-amd64-server-*"]
+terraform {
+  backend "s3" {
+    bucket = "descomplicando-terraform-vinicius-becker"
+    key    = "aula_backend"
+    region = "us-west-2"
   }
-
-  filter {
-    name   = "virtualization-type"
-    values = ["hvm"]
+  required_providers {
+    aws = {
+      source = "hashicorp/aws"
+      version = "~> 5.0"
+    }
   }
-
-  owners = ["099720109477"] # Canonical
 }
 
 provider "aws" {
