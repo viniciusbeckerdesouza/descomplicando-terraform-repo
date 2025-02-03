@@ -8,6 +8,7 @@ Usar *-upgrade* sempre pra atualizar os plugins.
 ### plan
 Este comando olha o HCL para ver o que você quer, olha o state file e verifica se o que foi pedido bate com o state e com o que está na cloud.  
 Se já tiver a máquina, ele vai falar que não tem nada para criar. Se não tiver ou for diferente, ele vai retornar as etapas que serão executadas.  
+Precisa fazer o export das credenciais primeiro.  
 
 ### apply
 Este comando aplica o plano, se existir, ou apenas cria a infraestrtura diretamente.  
