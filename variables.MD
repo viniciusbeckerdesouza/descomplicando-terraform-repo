@@ -23,4 +23,6 @@ resource "aws_instance" "web"{
 }
 ```
 ### Argumentos
-- default: valor padrão que será usado para aquela variável
+- default: valor padrão que será usado para aquela variável. Não deve ser usado se você quer que o usuário especifique.  
+- type: serve para garantir que o tipo passado é o correto. Se tanto faz o tipo, pode usar "any".  
+
