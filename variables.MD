@@ -22,3 +22,5 @@ resource "aws_instance" "web"{
     ami = var.image_id
 }
 ```
+### Argumentos
+- default: valor padrão que será usado para aquela variável
