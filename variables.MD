@@ -15,3 +15,10 @@ Usando *-var* após o apply ou plan.
 terraform apply -var="image_id=ami-abc123"
 ```
 2. No código:
+Passa o *var.<tipo-da-variavel>* como valor no argumento correspondente.
+Exemplo:
+```
+resource "aws_instance" "web"{
+    ami = var.image_id
+}
+```
