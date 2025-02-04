@@ -39,5 +39,5 @@ variable "image_id" {
   }
 }
 ```
-Neste exemplo, a condição é que o avlor passado tenha mais de 4 caracteres e comece com "ami-". 
-
+    Neste exemplo, a condição é que o valor passado tenha mais de 4 caracteres e comece com "ami-". 
+- sensitive: muitas informações passadas causam riscos para a organização e por isso devem ser criptografadas.  
