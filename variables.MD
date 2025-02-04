@@ -41,3 +41,8 @@ variable "image_id" {
 ```
 Neste exemplo, a condição é que o valor passado tenha mais de 4 caracteres e comece com "ami-". 
 - sensitive: muitas informações passadas causam riscos para a organização e por isso devem ser criptografadas.  
+### Arquivo tfvars
+Para melhor organizar os valores de variáveis, pode-se criar um arquivo .tfvars e declarar os valores das variáveis nele. Exemplo de execução:
+```
+terraform apply -var-file="testing.tfvars"
+```
