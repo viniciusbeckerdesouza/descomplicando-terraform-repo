@@ -6,5 +6,5 @@ variable "image_id" {
     condition     = length(var.image_id) > 4 && substr(var.image_id, 0, 4) == "ami-"
     error_message = "O image_id deve ser um identificador de AMI válido, começando com \"ami-\"."
   }
-  sensitive = true
+  sensitive = false
 }
