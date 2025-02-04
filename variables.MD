@@ -24,5 +24,7 @@ resource "aws_instance" "web"{
 ```
 ### Argumentos
 - default: valor padrão que será usado para aquela variável. Não deve ser usado se você quer que o usuário especifique.  
-- type: serve para garantir que o tipo passado é o correto. Se tanto faz o tipo, pode usar "any".  
+- type: serve para garantir que o tipo passado é o correto. Se tanto faz o tipo, pode usar "any".  Se tiver como "string" ele vai trasformar tudo o que você passar para string.  
+- description: serve para documentar a variável.  O Terraform docs usa para criar documentação de forma automatizada.  
+
 
