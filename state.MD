@@ -14,3 +14,4 @@ terraform state <comando>
 ```
 
 - list: lista tudo que está no state
+- show: mostra os atributes de um recurso (precisa passar o atributo)
