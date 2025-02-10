@@ -22,6 +22,15 @@ resource "aws_instance" "web"{
     ami = var.image_id
 }
 ```
+3. Como variável de ambiente
+A variável precisa ser exportada no seguinte formato:
+*TF_VAR_image_id=ami-abc123*, sempre começando com "TF_VAR_".
+```
+export TF_VAR_image_id=ami-abc123
+```
+Depois é só executar o plan ou apply. O Terraform vai entender que a variável está no ambiente.
+Nota: para ver todas as variáveis de ambiente, só usar *env*.
+
 ### Argumentos
 - default: valor padrão que será usado para aquela variável. Não deve ser usado se você quer que o usuário especifique.  
 - type: serve para garantir que o tipo passado é o correto. Se tanto faz o tipo, pode usar "any".  Se tiver como "string" ele vai trasformar tudo o que você passar para string.  
