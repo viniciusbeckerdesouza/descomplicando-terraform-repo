@@ -15,3 +15,4 @@ terraform state <comando>
 
 - list: lista tudo que está no state
 - show: mostra os atributes de um recurso (precisa passar o atributo)
+- pull: retorna o json do state. Pode ser redirecionado para uma arquivo .json usando jq
