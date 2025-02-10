@@ -6,3 +6,11 @@ O state mantém metadados que são aproveitados em diversas necessidades.
 Um exemplo, se eu removo o resource do meu HCL e rodo um plan, o state vai olhar nos metadados e verificar que o HCL foi alterado. No plano ele vai flar que o recurso que está na cloud será destruído, porque se ele não existe no código também não deve existir no mundo real.
 O state garante a integridade. Toda a infra tem que estar controlada pelo terraform.
 Ao contrário, o ansible não é assim. Quando você tira um recurso do playbook, o ansible para de controlar aquele recurso, mas ele não deixa de existir.
+O state também garante mais performance, já que o terraform só vai executar o que tiver sido alterado.
+O state garante syncing, ou seja, várias pessoas podem trabalhar em cima do mesmo state com ele remoto.
+### Comandos
+```
+terraform state <comando>
+```
+
+- list: lista tudo que está no state
