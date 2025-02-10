@@ -29,7 +29,7 @@ A variável precisa ser exportada no seguinte formato:
 export TF_VAR_image_id=ami-abc123
 ```
 Depois é só executar o plan ou apply. O Terraform vai entender que a variável está no ambiente.
-Nota: para ver todas as variáveis de ambiente, só usar *env*.
+Nota: para ver todas as variáveis de ambiente, só usar *env*. Para tirar uma variável do ambiente usar *unset*.
 
 ### Argumentos
 - default: valor padrão que será usado para aquela variável. Não deve ser usado se você quer que o usuário especifique.  
@@ -55,3 +55,10 @@ Para melhor organizar os valores de variáveis, pode-se criar um arquivo .tfvars
 ```
 terraform apply -var-file="testing.tfvars"
 ```
+### Precedência
+O Terraform usa as variáveis de acordo com a seguinte precedência (do menos importante para o mais importante):
+- variável de ambiente
+- .tfvars
+- .tfvars.json
+- .auto.tfvars ou .auto.tfvars.json (neste casos, ele processa na ordem alfabética do nome do arquivo)
+- -var e -var-file (na ordem em que for passado na linha de comando)
