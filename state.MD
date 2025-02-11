@@ -17,3 +17,8 @@ terraform state <comando>
 - show: mostra os atributes de um recurso (precisa passar o atributo)
 - pull: retorna o json do state. Pode ser redirecionado para uma arquivo .json usando jq
 - push: não usar
+### Lock do state
+Quando você coloca o state remoto, várias pessoas podem trabalhar nele ao mesmo tempo. Ou seja, pode ter 2 ou mais pessoas fazendo modificações ao mesmo tempo, e gerando conflitos.
+Por isso, ao salvar no s3, o bucket é o mesmo, mas tem múltiplas keys.
+Antes de você fazer a edição, você deve bloquear o state para que mais ninguém consiga mexer.
+DynamoDB (https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/dynamodb_table): banco não relacional da AWS. 
